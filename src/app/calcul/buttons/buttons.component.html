@@ -1,0 +1,49 @@
+<p>buttons works!</p>
+<fieldset class="cal">
+ <table>
+  <tbody>
+    <th> <input type="text"  disabled class="btn-in"  [(ngModel)]="num"> </th>
+
+
+    <tr>
+      <input type="text"  disabled class="btn-in"  [(ngModel)]="resultat">
+      <button class="btn" style="color:rgb(34, 3, 3);background-color:rgb(248, 18, 10);font-size:large;width: 150px;" (click)="clearall()">C</button>
+      <button class="btn" style="color:red;background-color:beige;font-size:large;" (click)="clear()"><=</button>
+
+      <button class="btn" style="color:red;background-color:beige;font-size:large;" (click)="addop('+')">+</button>
+
+    </tr>
+    <tr>
+      <button class="btn" style="color:red;background-color:beige;font-size:large;" value="9" (click)="add('9')">9</button>
+      <button class="btn" style="color:red;background-color:beige;font-size:large;" value="8" (click)="add('8')">8</button>
+     <button class="btn" style="color:red;background-color:beige;font-size:large;"value="7" (click)="add('7')">7</button>
+      <button class="btn" style="color:red;background-color:beige;font-size:large;" (click)="addop('-')">-</button>
+
+    </tr>
+    <tr>
+      <button class="btn" style="color:red;background-color:beige;font-size:large;" value="6 " (click)="add('6')">6</button>
+      <button class="btn" style="color:red;background-color:beige;font-size:large;" value="5" (click)="add('5')">5</button>
+     <button class="btn" style="color:red;background-color:beige;font-size:large;" value="4" (click)="add('4')">4</button>
+      <button class="btn" name="a" style="color:red;background-color:beige;font-size:large;" (click)="addop('/')">/</button>
+
+    </tr>
+    <tr>
+      <button class="btn" style="color:red;background-color:beige;font-size:large;" value="3" (click)="add('3')">3</button>
+      <button class="btn" style="color:red;background-color:beige;font-size:large;" value="2"(click)="add('2')">2</button>
+     <button class="btn" style="color:red;background-color:beige;font-size:large;" [value]="1" (click)="add('1')">1</button>
+     <button class="btn" style="color:red;background-color:beige;font-size:large;" (click)="addop('*')">X</button>
+
+    </tr>
+    <tr>
+      <button class="btn" style="color:red;background-color:beige;font-size:large;" (click)="addcara()"  >+/-</button>
+      <button class="btn" style="color:red;background-color:beige;font-size:large;"  (click)="add('0')">0</button>
+     <button class="btn" style="color:red;background-color:beige;font-size:large;" (click)="add('.')">.</button>
+      <button class="btn" style="color:red;background-color:rgb(246, 246, 3);font-size:large;" value="=" (click)="reponse()" >=</button>
+
+    </tr>
+  </tbody>
+ </table>
+</fieldset>
+<br>
+
+
